@@ -97,6 +97,11 @@ bot.on("message", function(user, userID, channelID, message, evt) {
           to: channelID,
           message: "HA.HA.HA... shut the fuck up"
         });
+      case "tell-joke":
+        bot.sendMessage({
+          to: channelID,
+          message: "Covalence."
+        })
         break;
       // Just add any case commands if you want to..
     }
