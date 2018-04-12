@@ -4,7 +4,7 @@
   "description": "First Discord Bot",
   "main": "bot.js",
   "scripts": {
-    "start": "node bot.js"
+    "start": "source ENV_VAR && node bot.js"
   },
   "author": "",
   "license": "ISC",
