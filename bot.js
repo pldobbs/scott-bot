@@ -82,7 +82,7 @@ bot.on("message", function(user, userID, channelID, message, evt) {
       case "eat":
         bot.sendMessage({
           to: channelID,
-          message: " EAT SHIT!"
+          message: "SHIT, and then die."
         });
         break;
       case "panda-died":
@@ -97,13 +97,28 @@ bot.on("message", function(user, userID, channelID, message, evt) {
           to: channelID,
           message: "HA.HA.HA... shut the fuck up"
         });
+        break;
       case "tell-joke":
         bot.sendMessage({
           to: channelID,
-          message: "Covalence."
-        })
+          message: randomJoke()
+        });
         break;
-      // Just add any case commands if you want to..
     }
   }
 });
+
+function randomJoke() {
+  let randNum = Math.floor(Math.random() * 8);
+  let jokes = [
+    "Covalence",
+    "Peter's attempt at a beard",
+    "Pauls teaching skills",
+    "Scotts sportmanship",
+    "Nicks non-toxic gaming behavior",
+    "Jasons taste in music",
+    "Siege team spirit",
+    "Auburn football"
+  ];
+  return jokes[randNum];
+}
