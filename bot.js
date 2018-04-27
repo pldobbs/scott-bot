@@ -29,8 +29,7 @@ bot.on("message", function(user, userID, channelID, message, evt) {
       case "scott-died":
         bot.sendMessage({
           to: channelID,
-          message:
-            "Yea, the dude is fucking hacking. #reported gg ezpz fucking haxr"
+          message: "Yea, the dude is hacking. #reported gg ezpz haxr"
         });
         break;
       case "thomas-died":
@@ -50,7 +49,7 @@ bot.on("message", function(user, userID, channelID, message, evt) {
       case "hoot-died":
         bot.sendMessage({
           to: channelID,
-          message: "This game is shit, I'm going to play meme games"
+          message: "This game is awful, I'm going to play meme games"
         });
         break;
       case "rufio-died":
@@ -75,13 +74,13 @@ bot.on("message", function(user, userID, channelID, message, evt) {
       case "nick-died":
         bot.sendMessage({
           to: channelID,
-          message: "GET FUKT GG GOD DAMMIT HACKER EAT SHIT AND DIE"
+          message: "I'm going and playing meme game"
         });
         break;
       case "eat":
         bot.sendMessage({
           to: channelID,
-          message: "SHIT, and then die."
+          message: "Hungry, gg."
         });
         break;
       case "panda-died":
@@ -94,7 +93,7 @@ bot.on("message", function(user, userID, channelID, message, evt) {
       case "lmao":
         bot.sendMessage({
           to: channelID,
-          message: "HA.HA.HA... shut the fuck up"
+          message: "HA.HA.HA... shut up"
         });
         break;
       case "tell-joke":
